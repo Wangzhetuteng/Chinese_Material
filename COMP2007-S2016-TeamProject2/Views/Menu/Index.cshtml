@@ -1,0 +1,18 @@
+﻿@using COMP2007_S2016_TeamProject2.Models
+@model IEnumerable<FoodType>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h3>Browse Food Types</h3>
+<p>
+    Select from @Model.Count()
+    food types:
+</p>
+<ul>
+    @foreach (FoodType item in Model)
+    {
+        <li>@Html.ActionLink(item.Name, "Browse", new { foodtype=item.Name })</li>
+    }
+</ul>

@@ -1,0 +1,20 @@
+﻿@using COMP2007_S2016_TeamProject2.Models
+@model FoodItem
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>FoodItem: @Model.Title</h2>
+<hr />
+<ul>
+    <li>Food Type:  @Model.FoodType.Name </li>
+    <li>Detailed Description: @Model.DetailedDescription </li>
+    <li>Price: @Model.Price </li>
+    <li>
+        Large Image :
+        <img src="@Model.FoodItemLargeImageUrl" alt="@Model.Title" width="600" height="400"/>
+
+    </li>
+</ul>
+<a href="@Url.Action("Edit","MenuManager", new { id = Model.FoodItemId })" class="btn btn-default"><i class="fa fa-pencil"></i> Edit</a>
