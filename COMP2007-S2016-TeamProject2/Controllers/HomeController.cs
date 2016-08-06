@@ -22,7 +22,7 @@ namespace COMP2007_S2016_TeamProject2.Controllers
         }
 
         // GET: /Contact/
-        public ActionResult Contact()
+        public ActionResult About()
         {
             return View();
         }
