@@ -20,5 +20,9 @@ namespace COMP2007_S2016_TeamProject2.Models
 
         public virtual DbSet<FoodType> FoodTypes { get; set; }
         public virtual DbSet<FoodItem> FoodItems { get; set; }
+        public virtual DbSet<Cart> Carts { get; set; }
+        public virtual DbSet<Order> Orders { get; set; }
+        public virtual DbSet<OrderDetail> OrderDetails { get; set; }
+
     }
 }
