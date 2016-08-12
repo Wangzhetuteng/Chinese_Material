@@ -2,19 +2,23 @@
 @model FoodItem
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Album - " + Model.Title;
 }
-
-<h2>FoodItem: @Model.Title</h2>
-<hr />
-<ul>
-    <li>Food Type:  @Model.FoodType.Name </li>
-    <li>Detailed Description: @Model.DetailedDescription </li>
-    <li>Price: @Model.Price </li>
-    <li>
-        Large Image :
-        <img src="@Model.FoodItemLargeImageUrl" alt="@Model.Title" width="600" height="400"/>
-
-    </li>
-</ul>
-<a href="@Url.Action("Edit","MenuManager", new { id = Model.FoodItemId })" class="btn btn-default"><i class="fa fa-pencil"></i> Edit</a>
+<h2>@Model.Title</h2>
+<p>
+    <img alt="@Model.Title"
+         src="@Model.FoodItemLargeImageUrl" />
+</p>
+<div id="album-details">
+    <p>
+        <em>Food Type:</em>
+        @Model.FoodType.Name
+    </p>
+    <p>
+        <em>Price:</em>
+        @String.Format("{0:F}", Model.Price)
+    </p>
+    <p class="button">
+        @Html.ActionLink("Add to cart", "AddToCart", "ShoppingCart", new { id = Model.FoodItemId }, "")
+    </p>
+</div>

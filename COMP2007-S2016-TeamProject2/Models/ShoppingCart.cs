@@ -9,7 +9,7 @@ namespace COMP2007_S2016_TeamProject2.Models
 {
     public class ShoppingCart
     {
-        RestaurantStoreContext StoreDB = new RestaurantStoreContext();
+        RestaurantStoreContext storeDB = new RestaurantStoreContext();
         string ShoppingCartId { get; set; }
         public const string CartSessionKey = "CartId";
 
@@ -30,7 +30,7 @@ namespace COMP2007_S2016_TeamProject2.Models
             // Get the matching cart and fooditem instances
             var cartItem = storeDB.Carts.SingleOrDefault(
                 c => c.CartId == ShoppingCartId
-                && c.AlbumId == fooditem.FoodItemId);
+                && c.FoodItemId == fooditem.FoodItemId);
 
             if (cartItem == null)
             {

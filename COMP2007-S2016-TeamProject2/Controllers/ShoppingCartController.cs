@@ -10,7 +10,7 @@ namespace COMP2007_S2016_TeamProject2.Controllers
 {
     public class ShoppingCartController : Controller
     {
-        RestaurantStoreContext StoreDB = new RestaurantStoreContext();
+        RestaurantStoreContext storeDB = new RestaurantStoreContext();
 
         //
         // GET: /ShoppingCart/
