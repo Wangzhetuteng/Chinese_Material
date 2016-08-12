@@ -1,5 +1,7 @@
 ﻿// IIFE
 (function () {
+    let cartValue: string;
+    let hasDeletion: Boolean = false;
     // Document.ready -> link up remove event handler
     $(".RemoveLink").click(function () {
         // Get the id from the link
@@ -16,9 +18,17 @@
                         $('#item-count-' + data.DeleteId).text(data.ItemCount);
                     }
                     $('#cart-total').text(data.CartTotal);
+                    cartValue = data.cartTotal;
+                    hasDeletion = true;
                     $('#update-message').text(data.Message);
                     $('#cart-status').text('Cart (' + data.CartCount + ')');
                 });
         }
     });
+
+    if (!hasDeletion) {
+        cartValue = $("#shoppingCart").html();
+    }
+
+    $("#shoppingCart").html(" <span class='badge'> " + cartValue + "</span>");
 })();

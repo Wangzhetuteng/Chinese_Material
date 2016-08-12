@@ -1,0 +1,14 @@
+﻿@using COMP2007_S2016_TeamProject2.Models
+@model IEnumerable<FoodType>
+
+
+<ul id="categories">
+    @foreach (var foodtype in Model)
+    {
+        <li>
+            @Html.ActionLink(foodtype.Name,
+                "Browse", "Menu",
+                new { FoodType = foodtype.Name }, null)
+    </li>
+    }
+</ul>

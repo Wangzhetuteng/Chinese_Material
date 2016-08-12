@@ -26,11 +26,17 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("Menu", "Index", "Menu")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>
+                        @{Html.RenderAction("CartSummary", "ShoppingCart");}
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="container body-content">
+
+    @{Html.RenderAction("FoodTypeMenu", "Menu");}
+
+    <div class="main container body-content">
         @RenderBody()
         <hr />
         <footer>

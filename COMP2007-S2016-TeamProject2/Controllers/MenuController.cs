@@ -45,7 +45,7 @@ namespace COMP2007_S2016_TeamProject2.Controllers
 
 
         //
-        // GET: /Store/Details/5
+        // GET: /Menu/Details/5
 
         public ActionResult Details(int id = 1)
         {
@@ -55,7 +55,14 @@ namespace COMP2007_S2016_TeamProject2.Controllers
         }
 
 
-
+        //
+        // GET: /Menu/FoodTypeMenu
+        [ChildActionOnly]
+        public ActionResult FoodTypeMenu()
+        {
+            var foodtypes = storeDB.FoodTypes.ToList();
+            return PartialView(foodtypes);
+        }
 
 
     }
