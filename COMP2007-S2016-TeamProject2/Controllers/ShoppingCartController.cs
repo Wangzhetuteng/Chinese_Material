@@ -1,4 +1,10 @@
-﻿using System;
+﻿/* File Name: COMP2007_S2016_TeamProject2
+ * Author: Yandong Wang  200277628
+ * File Description: Create a website that allow customer to view the cuisines and order them online.
+ * WebSite Name: Hai Di Lao Hot Pot
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -51,7 +57,7 @@ namespace COMP2007_S2016_TeamProject2.Controllers
             // Remove the item from the cart
             var cart = ShoppingCart.GetCart(this.HttpContext);
 
-            // Get the name of the fooditem to display confirmation
+            // Get the name of the food item to display confirmation
             string fooditemName = storeDB.Carts
                 .Single(item => item.RecordId == id).FoodItem.Title;
 

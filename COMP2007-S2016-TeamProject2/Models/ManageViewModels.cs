@@ -1,4 +1,11 @@
-﻿using System.Collections.Generic;
+﻿/* File Name: COMP2007_S2016_TeamProject2
+ * Author: Yandong Wang  200277628
+ * File Description: Create a website that allow customer to view the cuisines and order them online.
+ * WebSite Name: Hai Di Lao Hot Pot
+ */
+
+
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
