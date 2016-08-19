@@ -1,5 +1,5 @@
 ﻿/* File Name: COMP2007_S2016_TeamProject2
- * Author: Yandong Wang  200277628
+ * Author: Yandong Wang  200277628 Zhen Zhang 200257444
  * File Description: Create a website that allow customer to view the cuisines and order them online.
  * WebSite Name: Hai Di Lao Hot Pot
  */
@@ -7,7 +7,7 @@
 *
 {
 	margin: 0px;
-	padding: 0px;
+	padding: 1px;
 	border: none;
 }
 
@@ -15,7 +15,7 @@ body
 {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
-	background-color: #FBF9EF;
+	background-color: #e0ffdc;
 	padding: 60px 6% 0px 6%;
 
 }
@@ -28,6 +28,13 @@ body
     background-size: cover;
 }
 
+.about
+{
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	background-color: #fff;
+	padding: 5px 6% 30px 6%;
+}
 #container
 {
 	float: left;
@@ -35,7 +42,7 @@ body
 
 .navbar-brand
 {
-    padding-top: 5px;
+    padding-top: 4px;
 }
 
 #brand
@@ -52,12 +59,6 @@ body
 }
 
 
-#promotion
-{
-	height: 300px;
-	width: 700px;
-	background: url(/Assets/images/Logo.jpg) no-repeat;
-}
 
 ul li a
 {
@@ -214,7 +215,7 @@ a:link, a:visited
 
 a:hover
 {
-	color: #333333;
+	color: #3c6e90;
 	text-decoration: none;
 	font-weight: bold;
 }
@@ -342,4 +343,11 @@ th, td
 tr:hover
 {
 	background-color: #fff;
+}
+
+.jumbotron {
+    background-image: url("../Assets/Images/Jumbotron.jpg");
+
+    background-size: 100% 100%;
+
 }

@@ -16,6 +16,7 @@ namespace COMP2007_S2016_TeamProject2.Models
 {
     public class FoodType
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         /// <summary>
         /// This is the empty constructor
         /// </summary>
