@@ -33,7 +33,7 @@ namespace COMP2007_S2016_TeamProject2.Controllers
         //
         // GET: /Menu/Browse?type=Appetizer
 
-        public ActionResult Browse(string foodtype = "Appetizer")
+        public ActionResult Browse(string foodtype = "Tones")
         {
             // Retrieve Food Type and its Associated Food Items from database
             FoodType foodtypeModel = storeDB.FoodTypes.Include("FoodItems").Single(g => g.Name == foodtype);

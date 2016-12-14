@@ -7,22 +7,19 @@
 <h2>@Model.Title</h2>
 <p>
     <img alt="@Model.Title"
-         src="@Model.FoodItemLargeImageUrl" width="500" height="400"/>
+         src="@Model.FoodItemLargeImageUrl" width="300" height="200"/>
 </p>
 <div id="album-details">
     <p>
-        <em>Food Type:</em>
+        <em>Category:</em>
         @Model.FoodType.Name
     </p>
     <p>
-        <em>Detailed Description:</em>
+        <em>Translation:</em>
         @Model.DetailedDescription
     </p>
-    <p>
-        <em>Price: $</em>
-        @String.Format("{0:F}", Model.Price)
-    </p>
-    <p class="button">
-        @Html.ActionLink("Add to cart", "AddToCart", "ShoppingCart", new { id = Model.FoodItemId }, "")
-    </p>
+
+
+
+
 </div>
