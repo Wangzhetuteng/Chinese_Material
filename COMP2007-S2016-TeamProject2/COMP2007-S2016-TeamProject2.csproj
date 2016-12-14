@@ -215,9 +215,35 @@
     <Compile Include="ViewModels\ShoppingCartViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Images\ba.gif" />
+    <Content Include="Assets\Images\bing.gif" />
+    <Content Include="Assets\Images\dian.png" />
+    <Content Include="Assets\Images\FirstTone1.png" />
+    <Content Include="Assets\Images\FirstTone2.gif" />
+    <Content Include="Assets\Images\FourthTone1.png" />
+    <Content Include="Assets\Images\FourthTone2.gif" />
+    <Content Include="Assets\Images\heng.png" />
+    <Content Include="Assets\Images\henggou.PNG" />
     <Content Include="Assets\Images\Jumbotron.jpg" />
+    <Content Include="Assets\Images\li.gif" />
     <Content Include="Assets\Images\Location.png" />
     <Content Include="Assets\Images\Logo.jpg" />
+    <Content Include="Assets\Images\mai.png" />
+    <Content Include="Assets\Images\na.PNG" />
+    <Content Include="Assets\Images\pie.PNG" />
+    <Content Include="Assets\Images\SecondTone1.png" />
+    <Content Include="Assets\Images\SecondTone2.gif" />
+    <Content Include="Assets\Images\shu.png" />
+    <Content Include="Assets\Images\shugou.PNG" />
+    <Content Include="Assets\Images\ThirdTone1.png" />
+    <Content Include="Assets\Images\ThirdTone2.gif" />
+    <Content Include="Assets\Images\ti.PNG" />
+    <Content Include="Assets\Images\wang.gif" />
+    <Content Include="Assets\Images\wo.jpeg" />
+    <Content Include="Assets\Images\xiao.png" />
+    <Content Include="Assets\Images\xiegou.PNG" />
+    <Content Include="Assets\Images\zhang.png" />
+    <Content Include="Assets\Images\zhong.gif" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
