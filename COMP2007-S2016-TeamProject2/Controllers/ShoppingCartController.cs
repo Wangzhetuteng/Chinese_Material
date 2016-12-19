@@ -71,7 +71,7 @@ namespace COMP2007_S2016_TeamProject2.Controllers
                 Message = Server.HtmlEncode(fooditemName) +
                     " has been removed from your shopping cart.",
                 CartTotal = cart.GetTotal(),
-                CartCount = cart.GetCount(),
+                //CartCount = cart.GetCount(),
                 ItemCount = itemCount,
                 DeleteId = id
             };
@@ -84,7 +84,7 @@ namespace COMP2007_S2016_TeamProject2.Controllers
         {
             var cart = ShoppingCart.GetCart(this.HttpContext);
 
-            ViewData["CartCount"] = cart.GetCount();
+            //ViewData["CartCount"] = cart.GetCount();
             return PartialView("CartSummary");
         }
     }

@@ -102,6 +102,7 @@ namespace COMP2007_S2016_TeamProject2.Models
             return storeDB.Carts.Where(
                 cart => cart.CartId == ShoppingCartId).ToList();
         }
+        /*
         public int GetCount()
         {
             // Get the count of each item in the cart and sum them up
@@ -111,6 +112,7 @@ namespace COMP2007_S2016_TeamProject2.Models
             // Return 0 if all entries are null
             return count ?? 0;
         }
+        */
         public decimal GetTotal()
         {
             // Multiply album price by count of that album to get
