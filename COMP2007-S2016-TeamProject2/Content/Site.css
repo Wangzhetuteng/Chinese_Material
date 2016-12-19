@@ -3,7 +3,7 @@
  * File Description: Create a website that allow customer to view the cuisines and order them online:
  * View food types, food items, food items details; add items to Cart; remove food items from cart;
  * Fill out shipping information and promotion code; submit order.
- * WebSite Name: Learning Mandarin
+ * WebSite Name: Learning Mandarin Online
  */
 
 *
@@ -294,10 +294,13 @@ legend
 
 fieldset
 {
-	border: #ff0000 1px solid;
+	border: #ff6a00 3px solid;
 	padding: 10px 10px;
+    margin-top: 0px;
 	margin-bottom: 1px;
 	clear: both;
+    margin-left: 60px;
+
 }
 
 div.editor-field
@@ -335,13 +338,18 @@ input[type=text], input[type=password], select
 }
 
 /* Tables */
+div#table
+{
+    margin-left: 40px;
+    width: 100%;
+}
 table
 {
 	border: 1px solid #b6ff00;
 	border-collapse: collapse;
 	color: #fff;
-	min-width: 500px;
-	width: 100%;
+	min-width: 200px;
+	width: 60%;
 }
 
 tr
@@ -367,7 +375,7 @@ tr:hover
 {
 	background-color: #b200ff;
 }
-
+/***********************Header***************************/
 .jumbotron {
     background-image: url("../Assets/Images/learnChinese.png");
     height: 200px;

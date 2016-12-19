@@ -12,16 +12,14 @@
 </p>
 <div id="update-message">
 </div>
+<div id="table">
 <table>
     <tr>
         <th>
             Item Name
         </th>
         <th>
-            Price (each)
-        </th>
-        <th>
-            Quantity
+            Price
         </th>
         <th></th>
     </tr>
@@ -37,9 +35,7 @@
             <td>
                 @item.FoodItem.Price
             </td>
-            <td id="item-count-@item.RecordId">
-                @item.Count
-            </td>
+
             <td>
                 <a href="#" class="RemoveLink"
                    data-id="@item.RecordId">
@@ -53,10 +49,10 @@
         <td>
             Total
         </td>
-        <td></td>
-        <td></td>
+
         <td id="cart-total">
             @Model.CartTotal
         </td>
     </tr>
 </table>
+</div>

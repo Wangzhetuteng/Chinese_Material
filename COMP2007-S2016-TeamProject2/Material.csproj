@@ -254,6 +254,7 @@
     <Content Include="Assets\Images\LearnChinese.png" />
     <Content Include="Assets\Images\li.gif" />
     <Content Include="Assets\Images\Location.png" />
+    <Content Include="Assets\Images\logo.png" />
     <Content Include="Assets\Images\na.PNG" />
     <Content Include="Assets\Images\nai.gif" />
     <Content Include="Assets\Images\pi.gif" />

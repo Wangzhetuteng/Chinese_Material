@@ -3,12 +3,10 @@
 @using (Html.BeginForm())
 {
 
-    <h2>Address And Payment</h2>
     <fieldset>
-        <legend>Shipping Information</legend>
+        <legend>Fill Your Information</legend>
         @Html.EditorForModel()
+        <input type="submit" value="Submit Order" />
     </fieldset>
 
-
-    <input type="submit" value="Submit Order" />
 }

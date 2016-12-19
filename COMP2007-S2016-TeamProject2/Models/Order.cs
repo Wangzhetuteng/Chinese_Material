@@ -3,7 +3,7 @@
  * File Description: Create a website that allow customer to view the cuisines and order them online:
  * View food types, food items, food items details; add items to Cart; remove food items from cart;
  * Fill out shipping information and promotion code; submit order.
- * WebSite Name: Hai Di Lao Hot Pot
+ * WebSite Name: Learn Mandarin Online
  */
 using System;
 using System.Collections.Generic;
@@ -32,6 +32,7 @@ namespace COMP2007_S2016_TeamProject2.Models
         [DisplayName("Last Name")]
         [StringLength(160)]
         public string LastName { get; set; }
+        /*
         [Required(ErrorMessage = "Address is required")]
         [StringLength(70)]
         public string Address { get; set; }
@@ -40,7 +41,7 @@ namespace COMP2007_S2016_TeamProject2.Models
         public string City { get; set; }
         [Required(ErrorMessage = "Province is required")]
         [StringLength(40)]
-        public string State { get; set; }
+        public string Province { get; set; }
         [Required(ErrorMessage = "Postal Code is required")]
         [DisplayName("Postal Code")]
         [StringLength(10)]
@@ -48,6 +49,7 @@ namespace COMP2007_S2016_TeamProject2.Models
         [Required(ErrorMessage = "Country is required")]
         [StringLength(40)]
         public string Country { get; set; }
+        */
         [Required(ErrorMessage = "Phone is required")]
         [StringLength(24)]
         public string Phone { get; set; }
@@ -57,7 +59,7 @@ namespace COMP2007_S2016_TeamProject2.Models
         [RegularExpression(@"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}",
             ErrorMessage = "Email is is not valid.")]
         [DataType(DataType.EmailAddress)]
-        public string Email { get; set; }
+        public string EmailAddress{ get; set; }
         [ScaffoldColumn(false)]
         public decimal Total { get; set; }
         public List<OrderDetail> OrderDetails { get; set; }

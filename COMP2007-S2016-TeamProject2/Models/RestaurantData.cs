@@ -3,7 +3,7 @@
  * File Description: Create a website that allow customer to view the cuisines and order them online:
  * View food types, food items, food items details; add items to Cart; remove food items from cart;
  * Fill out shipping information and promotion code; submit order.
- * WebSite Name: Hai Di Lao Hot Pot
+ * WebSite Name: Learn Mandarin Online
  */
 using System;
 using System.Collections.Generic;
