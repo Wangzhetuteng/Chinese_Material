@@ -15,11 +15,14 @@
         @Model.FoodType.Name
     </p>
     <p>
-        <em>Translation:</em>
+        <em>Description:</em>
         @Model.DetailedDescription
     </p>
-
-
-
-
+    <p>
+        <em>Price: $</em>
+        @String.Format("{0:F}", Model.Price)
+    </p>
+    <p class="button">
+        @Html.ActionLink("Add to cart", "AddToCart", "ShoppingCart", new { id = Model.FoodItemId }, "")
+    </p>
 </div>

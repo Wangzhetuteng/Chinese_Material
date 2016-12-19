@@ -1,7 +1,7 @@
 ﻿/* File Name: COMP2007_S2016_TeamProject2
- * Author: Yandong Wang  200277628, Zhen Zhang 200257444
+ * Author: Yandong Wang  200277628
  * File Description: Create a website that allow customer to view the cuisines and order them online:
- * View food types, food items, food items details; add dood items to Cart; remove food items from cart;
+ * View food types, food items, food items details; add items to Cart; remove food items from cart;
  * Fill out shipping information and promotion code; submit order.
  * WebSite Name: Hai Di Lao Hot Pot
  */
@@ -38,7 +38,7 @@ namespace COMP2007_S2016_TeamProject2.Models
         [Required(ErrorMessage = "City is required")]
         [StringLength(40)]
         public string City { get; set; }
-        [Required(ErrorMessage = "State is required")]
+        [Required(ErrorMessage = "Province is required")]
         [StringLength(40)]
         public string State { get; set; }
         [Required(ErrorMessage = "Postal Code is required")]

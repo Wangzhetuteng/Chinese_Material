@@ -1,7 +1,7 @@
 ﻿/* File Name: COMP2007_S2016_TeamProject2
- * Author: Yandong Wang  200277628, Zhen Zhang 200257444
- * File Description: Create a website that allow customer to view the cuisines and order them online: 
- * View food types, food items, food items details; add dood items to Cart; remove food items from cart;
+ * Author: Yandong Wang  200277628
+ * File Description: Create a website that allow customer to view the cuisines and order them online:
+ * View food types, food items, food items details; add items to Cart; remove food items from cart;
  * Fill out shipping information and promotion code; submit order.
  * WebSite Name: Hai Di Lao Hot Pot
  */
@@ -20,7 +20,7 @@ namespace COMP2007_S2016_TeamProject2.Controllers
     {
         RestaurantStoreContext storeDB = new RestaurantStoreContext();
 
-        const string PromoCode = "FREE";
+
         //
         // GET: /Checkout/AddressAndPayment
         public ActionResult AddressAndPayment()
@@ -28,6 +28,7 @@ namespace COMP2007_S2016_TeamProject2.Controllers
             return View();
         }
         //
+
         // POST: /Checkout/AddressAndPayment
         [HttpPost]
         public ActionResult AddressAndPayment(FormCollection values)
@@ -37,13 +38,8 @@ namespace COMP2007_S2016_TeamProject2.Controllers
 
             try
             {
-                if (string.Equals(values["PromoCode"], PromoCode,
-                    StringComparison.OrdinalIgnoreCase) == false)
-                {
-                    return View(order);
-                }
-                else
-                {
+
+
                     order.Username = User.Identity.Name;
                     order.OrderDate = DateTime.Now;
 
@@ -56,13 +52,14 @@ namespace COMP2007_S2016_TeamProject2.Controllers
 
                     return RedirectToAction("Complete",
                         new { id = order.OrderId });
-                }
+
             }
             catch
             {
                 //Invalid - redisplay with errors
                 return View(order);
             }
+
         }
         //
         // GET: /Checkout/Complete
@@ -82,5 +79,7 @@ namespace COMP2007_S2016_TeamProject2.Controllers
                 return View("Error");
             }
         }
-    }
+
+
+   }
 }

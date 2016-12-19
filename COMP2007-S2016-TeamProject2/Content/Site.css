@@ -1,9 +1,9 @@
 ﻿/* File Name: COMP2007_S2016_TeamProject2
- * Author: Yandong Wang  200277628, Zhen Zhang 200257444
+ * Author: Yandong Wang  200277628
  * File Description: Create a website that allow customer to view the cuisines and order them online:
- * View food types, food items, food items details; add dood items to Cart; remove food items from cart;
+ * View food types, food items, food items details; add items to Cart; remove food items from cart;
  * Fill out shipping information and promotion code; submit order.
- * WebSite Name: Hai Di Lao Hot Pot
+ * WebSite Name: Learning Mandarin
  */
 
 *
@@ -17,14 +17,14 @@ body
 {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
-	background-color: #e0ffdc;
+	background-color: #ffd800;
 	padding: 60px 6% 0px 6%;
 
 }
 
 
 .body-content .bg {
-    background: url(/Assets/images/Restaurant1.jpg) no-repeat center center fixed;
+    background: url(/Assets/images/) no-repeat center center fixed;
     height:600px;
 
     background-size: cover;
@@ -33,9 +33,9 @@ body
 .about
 {
     font-family: Arial, Helvetica, sans-serif;
-	font-size: 30px;
-	background-color: #fff;
-	padding: 5px 6% 30px 6%;
+	font-size: 15px;
+
+	padding: 15px 0px 0px 0%;
 }
 #container
 {
@@ -44,7 +44,7 @@ body
 
 .navbar-brand
 {
-    padding-top: 4px;
+    padding-top: 3px;
 }
 
 #brand
@@ -56,55 +56,59 @@ body
 {
     font-size: 20px;
     float: left;
-    background: url(/Assets/images/Logo.jpg) no-repeat;
-    padding: 45px 0px 5px 0px;
+    background: url(/Assets/images/logo.jpeg) no-repeat;
+    padding: 10px 10px 15px 10px;
 }
 
 
 
 ul li a
 {
-	font-size: 16px;
+	font-size: 15px;
+    color: #fff;
+    padding: 10px 10px 15px 1px;
 }
 
 #main
 {
 	overflow: hidden;
-	padding: 0 0 15px 10px;
+	padding: 0px 10px 15px 10px;
 	float: left;
 }
 
 ul
 {
-	list-style-type: square;
-	margin-left: 25px;
-	font-size: 14px;
+	list-style-type: symbols();
+	margin-left: 150px;
+	font-size: 25px;
 }
 
 ul#album-list
 {
 	list-style: none;
-	margin-left: 0px;
+	margin-left: 10px;
 }
 
 ul#album-list li
 {
-	height: 130px;
-	width: 100px;
+	height: 100px;
+	width: 80px;
 	float: left;
-	margin: 10px;
+	margin: 90px;
 	text-align: center;
 }
 
 ul#album-list li a, ul#album-list li .button
 {
-	font-size: 13px;
+	font-size: 12px;
 	float: left;
 }
 
 ul#album-list li a span
 {
-	color: #9b9993;
+    font-size: small;
+	color: #ff0000;
+    background-color:antiquewhite;
 	text-decoration: underline;
 }
 
@@ -126,7 +130,7 @@ ul#album-list li a span
 	padding: 5px;
 	margin-top: 10px;
 	border: 1px;
-	background: #5e5b54;
+	background: #006633;
 	color: #fff;
 	font-weight: bold;
 }
@@ -141,8 +145,8 @@ ul#album-list li a span
 	clear: both;
 	padding: 10px;
 	text-align: right;
-	border-top: 1px dotted #8A8575;
-	border-bottom: 1px dotted #8A8575;
+	border-top: 1px dotted #3c6e90;
+	border-bottom: 1px dotted #F6855E;
 	font-family: Constantia, Georgia, serif;
 }
 
@@ -159,10 +163,10 @@ ul#navlist li
 
 ul#navlist li a
 {
-	border-left: 1px dotted #8A8575;
+	border-left: 1px dotted #000;
 	padding: 10px;
 	margin-top: 10px;
-	color: #8A8575;
+	color: #F6855E;
 	text-decoration: none;
 	float: left;
 }
@@ -182,12 +186,12 @@ ul#navlist li a:hover
 p
 {
 	margin-bottom: 15px;
-	margin-top: 0px;
+	margin-top: 10px;
 }
 
 h2
 {
-	color: #5e5b54;
+	color: #fff;
 }
 
 h2, h3
@@ -205,26 +209,28 @@ h3
 
 #header h1 a, h3 em
 {
-	color: #5E5B54;
+	color: #ff0000;
 }
 
 a:link, a:visited
 {
-	color: #F6855E;
+	color: #3c6e90;
 	text-decoration: none;
 	font-weight: bold;
+    padding-left: 10px;
 }
 
 a:hover
 {
-	color: #3c6e90;
+	color: #fff;
 	text-decoration: none;
 	font-weight: bold;
+
 }
 
 a:active
 {
-	color: #006633;
+	color: #ff0000;
 	text-decoration: none;
 	font-weight: bold;
 }
@@ -235,33 +241,48 @@ a:active
 {
 	font-family: Constantia, Georgia, serif;
 	list-style-type: none;
-	border-right: #5d5a53 1px dotted;
+	border-right: #b6ff00 1px dotted;
 	padding-right: 10px;
-	margin: 0 25px 0 0;
+	margin: 10px 10px 10px 10px;
 	float: left;
 }
 
 #categories a:link, #categories a:visited
 {
-	color: #9B9993;
-	text-decoration: none;
+	color: #b200ff;
+	text-decoration: dotted;
 }
 
 #categories a:hover
 {
-	color: #F46739;
+	color: #b6ff00;
 }
 
 div#album-details p
 {
-	margin-bottom: 5px;
-	color: #5e5b54;
+	margin-left: 50px;
+	color: #0094ff;
 	font-weight: bold;
+}
+
+div#videolist
+{
+    margin-left: 50px;
+}
+
+div#register
+{
+    margin-left: 30px;
+    width: 800px;
+     width: 100%;
+    float: left;
+    margin-right:1000000px;
+    clear: both;
 }
 
 p em
 {
-	color: #9b9993;
+	color: #0094ff;
 }
 
 /* Form styles */
@@ -273,20 +294,20 @@ legend
 
 fieldset
 {
-	border: #9b9993 1px solid;
-	padding: 0 10px;
-	margin-bottom: 10px;
-	clear: left;
+	border: #ff0000 1px solid;
+	padding: 10px 10px;
+	margin-bottom: 1px;
+	clear: both;
 }
 
 div.editor-field
 {
-	margin-bottom: 10px;
+	margin-left: 0px;
 }
 
 input[type=text], input[type=password], select
 {
-	border: 1px solid #8A8575;
+	border: 2px solid #8A8575;
 	width: 300px;
 }
 
@@ -316,9 +337,9 @@ input[type=text], input[type=password], select
 /* Tables */
 table
 {
-	border: 1px solid #000;
+	border: 1px solid #b6ff00;
 	border-collapse: collapse;
-	color: #666666;
+	color: #fff;
 	min-width: 500px;
 	width: 100%;
 }
@@ -331,9 +352,9 @@ tr
 
 th
 {
-	background-color: #9b9993;
-	color: #000;
-	font-size: 13px;
+	background-color: #0094ff;
+	color: #ff0000;
+	font-size: 18px;
 	text-align: left;
 }
 
@@ -344,12 +365,13 @@ th, td
 
 tr:hover
 {
-	background-color: #fff;
+	background-color: #b200ff;
 }
 
 .jumbotron {
-    background-image: url("../Assets/Images/Jumbotron.jpg");
-
+    background-image: url("../Assets/Images/learnChinese.png");
+    height: 200px;
+    width: 500px;
     background-size: 100% 100%;
-
+    margin: 10px 10px 10px 60px;
 }
